@@ -11,11 +11,20 @@
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
-<!--name input-->
+<!-- name input -->
 <div>
-  <label>
-    n
+  <label for="name">
+    Name
   </label>
+  <input id="name" type="text" formControlName="name">
+</div>
+
+<!-- address input -->
+<div>
+  <label for="address">
+    Address
+  </label>
+  <input id="address" type="text" formControlName="address">
 </div>
 
 <button class="button" type="submit">
